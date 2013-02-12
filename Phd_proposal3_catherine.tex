@@ -1,0 +1,230 @@
+%% %Ikae Catherine Omal
+%%% Phd_proposal3
+
+\documentclass[reqno,12pt,oneside]{report} % right-side equation numbering, 12 point font, print one-sided 
+\textheight =23.7cm
+\textwidth =16.5cm
+\voffset =-1cm
+%\hoffset =-1cm
+\topmargin =-0.4cm
+\lineskip =14pt
+\parskip =10pt
+
+%%\usepackage{draftwatermark} % Adds a watermark in the background.
+\usepackage{fullpage,url}
+\usepackage{makeidx}
+\makeindex
+\usepackage{rac,bezier}         % Use Rackham thesis style file
+%\usepackage{aas_macros}  % To allow the reading of ADS journal references in the bibliography
+\usepackage[intlimits]{amsmath} % Puts the limits of integrals on top and bottom
+\usepackage{amsxtra}     % Use various AMS packages
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}    % Add some packages for figures. Read epslatex.pdf on ctan.tug.org
+\usepackage{rotating}
+\usepackage{color}
+\usepackage{url}
+\usepackage{epsfig}
+\usepackage{subfigure}   % To make subfigures. Read subfigure.pdf on ctan.tug.org
+\usepackage{verbatim}
+
+\usepackage[square]{natbib}
+%\usepackage{natbib}      % Allows you to use BibTeX
+%\usepackage[printonlyused]{acronym} % For the List of Abbreviations. Read acronym.pdf on ctan.tug.org
+\usepackage{setspace}    % Allows you to specify the line spacing
+\doublespacing           % \onehalfspacing for 1.5 spacing, \doublespacing for 2.0 spacing.
+\newcommand{\sun}{\ensuremath{\odot}} % sun symbol is \sun
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Various theorem environments. All of the following have the same numbering
+% system as theorem.
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{introduction}[theorem]{Introduction}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\numberwithin{theorem}{chapter}     % Numbers theorems "x.y" where x
+                                    % is the section number, y is the
+                                    % theorem number
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If printing two-sided, this makes sure that any blank page at the 
+% end of a chapter will not have a page number. 
+\makeatletter
+
+\newcommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\spacefactor1000}
+\newcommand{\noi}{\noindent}
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%This command creates a box marked ``To Do'' around text.
+%To use type \todo{  insert text here  }.
+
+\newcommand{\todo}[1]{\vspace{5 mm}\par \noindent
+\marginpar{\textsc{To Do}}
+\framebox{\begin{minipage}[c]{0.95 \textwidth}
+\tt\begin{center} #1 \end{center}\end{minipage}}\vspace{5 mm}\par}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%\bibliographystyle{agu04}    % Set the bibliography style. agu04, plain, alpha, etc.
+%\bibliographystyle{IEEEtran}
+ \bibliographystyle{IEEEbib}
+% Title page as required by Rackham dissertation guidelines\begin{titlepage}
+\pagenumbering{}	
+
+\begin{center}
+{\bf {\large ICT for Basic Service Delivery - Case Study: Water Sector in Uganda }}\vspace{1cm} \\
+{by}\\ {\bf IKAE CATHERINE OMAL }\\
+
+%{ BSC ED (Mak), BITC (KYU)}\\
+ E-mail: ikae.catherine@cit.mak.ac.ug, cikae\_3@yahoo.com, Tel: +256 772 695998\vspace{3cm}
+\end{center}
+
+
+% Begin the front matter as required by Rackham dissertation guidelines
+%\initializefrontsections
+
+%\pagenumbering{roman}
+% Page numbering. If you don't include a frontispiece or copyright page, you'll need to change this for two-sided printing.
+\makeatletter
+\if@twoside \setcounter{page}{4} \else \setcounter{page}{1} \fi
+\makeatother
+
+
+\startthechapters 
+\pagenumbering{arabic}
+
+\noindent {\Large \textbf{ Villages/regions that could become the research field}}\\
+\noindent Wakiso District with a total area of 2,704 km2 (1,044 sq miles) has an estimated total population of 1,310,100 witha population density measuring 484.5/km2 (1,255/sq mi). It is made up of two counties: Kyaddondo County and 	Busiro County. The district is subdivided into several administrative units one of them being Kakiri Municipality with a total area of 38.16 sq mi (98.83 km2). The town lies approximately 17 kilometres (11 mi) northeast of the central business district of the city of Kampala, Uganda's capital. The total area of the town is 98.83 square kilometres (24,420 acres) or 38.15 square miles (9,880 ha). The last national census in 2002 estimated Kira's population to be 140,774 people, of whom 67,222 (47.8\%) were males and 73,548 (52.2\%) were females. One of the wards Bweyogerere having 17,547 male and	20,094 female. Kireka with 25,281 male and	28,728 female. Kyaliwajjala with 7,844 male	8,302	and 16,151 female\cite{population2010}\cite{population02}.
+
+\noindent {\Large \textbf{Who are the people using phones \& ICT services and for what purposes.}} \\
+People are embracing new technologies and using them on a daily basis not only to access but also to share information freely. Mobile phones have become basic needs to many Ugandans because people rely on them to access a wide range of services: from market prices to mobile banking (Mobile Money). Mobile Health, or mHealth, is a new way of using technology to share health information. Applications, such as WinSenga, are being developed to ensure that diagnoses can be done through mobile phones in the future. 
+
+\noindent Social media is mostly used by young people between 15 and 30. This age group includes students and young people who have just graduated and those starting to build their careers. The most active people online, though, are between the ages 23 to 45 – mostly those working in media houses (journalists/ TV or radio presenters) and non-profit organizations\cite{Kimberly11}\cite{ Scott04}.
+
+\noindent Some of the uses of mobile phones are for data collection and dissemination across multiple sectors, such as health, socio-economic development, agriculture, natural resource management, disaster relief, and their relevant subsectors. %in international development (Hellstrom 2010; UNICEF 2010). 
+In health, or mHealth, mobile phones are employed for: disseminating information on public health to residents and health workers; collecting real-time data; assisting in and monitoring medication compliance; tracking disease outbreaks; managing inventories of drugs in remote locations; and through nonconsumer applications diagnosing illnesses. In agriculture, or mAgriculture, mobile phones connect farmers to government services, cooperatives, and networks, as well as facilitate the flow of timely information about markets and crop prices. Mobile banking, or mBanking, has made financial services more attractive and readily accessible to poor populations and those living in remote locations\cite{Rikke10}. Mobile phones hold particular value in these fields because they can act as point-of-use devices, function in remote locations, and are readily carried and used at any time \cite{Kimberly11}\cite{Rikke10}.
+
+\noindent Studies have revealed that rural inhabitants and poorer urban users value phone services but do not use them very often compared to relatively more affluent users; over 40\% of people in Uganda used mobile phones through friends and family and individuals; although a further 24\% of people used mobile phone through teleshops, demonstrating a strong preference for mobile phones rather than fixed line phones, and a preference for private phones rather than public access points. It has also been shown that “chatting” with friends and family is clearly the most common use of phones in Uganda\cite{ Scott04}.
+
+\noindent Information provision; ICT tools has been used to empower people to participate in democratic processes\cite{Post11}. In the run up to Uganda’s February 2011 presidential elections, ICT provided alternative mediums of communication and engagement, where citizens could express views that might otherwise not have been tolerated if they were to voice them through mainstream media\cite{Post11}\cite{ Ashnah12}. Where print and programmed broadcasting could not allow for live reporting, media houses made up for this in numerous ways. The Daily Monitor newspaper’s online portal incorporated live Twitter and breaking news for numerous social and political events, while its sister company, Nation Television (NTV), made use of Youtube to upload latest videos. 
+More than ever, media houses during 2010 and 2011 asked their readers, viewers and listeners to participate actively in call-in programmes, comments on Facebook pages and Twitter updates\cite{Post11}. 
+
+\noindent Election monitoring; Crowd sourcing and crowd mapping technology offered a new way for citizens to monitor various stages of the election process. In 
+monitoring elections, two initiatives, Uchaguzi and Uganda Watch 2011, allowed for information and events to be reported as they happened. Combined with other tools such as SMS short codes, online forms, email and Twitter, the platforms supported fair and transparent elections in real-time\cite{Post11}\cite{ Ashnah12}. 
+
+\noindent Uchaguzi, run by the Citizens Coalition for Electoral Democracy in Uganda (CCEDU) and other civil society organisations, aggregated “citizens’ and election observers’ voices in near real time” on the elections, incorporating mobile phones, mapping tools, twitter and Facebook on its online portal\cite{Post11}.
+
+\noindent Citizen Policing; Ureport, a UNICEF-led initiative, is a free SMS social monitoring tool designed to address issues affecting the youth of Uganda\cite{Post11}. The system allows young people to speak out on what is happening in their communities, provides a forum to amplify their voices through local and national media, and feeds back useful information to help Ureporters to use in their initiative, enact change and mobilise communities. Through use of free SMS, the system allows users to send questions out to Ureporters using a short code and Ureporters respond allowing information to be collected instantaneously. Piloted in September 2010, Ureport initially had 100 scouts, growing to over 800 reporters across 60 districts\cite{Post11}. Poll questions and information are sent out to registered Ureporters on a weekly basis. The Ureporters in turn send unsolicited information to the system. Currently focusing on water, sanitation and access to education, in the future Ureport hopes to cover broader issues affecting the youth of Uganda. This initiative empowers youth to make a difference and improve their rights and improve lives in their communities. Since the results of Ureports are shared among decision makers and other stakeholders who implement change, the initiative could potentially strengthen social monitoring and citizenship education\cite{Post11}\cite{ Ashnah12}.
+
+\noindent  How political parties used ICT in the 2011 elections, party campaigns, Innovative Campaign tools, SMS: Millions of Ugandan mobile phone subscribers received a text message with greetings in local languages from candidates, mainly Museveni. The text messages solicited for votes. After the elections victory, the NRM campaign sent a message thanking voters\cite{Post11}. Music and Video: Following a campaign speech, the NRM candidate recorded a rap song You Want Another Rap complete with remixes and back-up vocals. The rap video was uploaded on Youtube and it went viral particularly among the Ugandan online community, also gaining popularity as a ringtone, caller tune, and un-official party anthem. Fundraising Supporters of the political parties FDC and DP were able to make donations online through renowned international banking systems (VISA Paypal, Mastercard and American Express)\cite{Post11}\cite{ Ashnah12}.
+
+\noindent {\Large \textbf{Current phone penetration and usages.}} \\
+\noindent Uganda has moved from approximately 250,000 available fixed telephone lines pre- 2003 to over 17 million available mobile telephone lines by the second quarter of 2012 and a penetration of more than 50\%, thereby making Ugandas telecommunications market one of the fastest growing in Africa. There is now sizeable ICT deployment in the functioning of government organizations, as well as in the private sector. In addition, ICT now drives some activities in the financial and tourism and informal sectors while various e-Government initiatives are ongoing in various departments at all tiers of government\cite{Nora10}\cite{Post11}.
+
+\noindent Uganda has 16.45 million mobile phone subscribers shared among the major five telecom operators including MTN, Airtel, UTL, Warid and Orange Uganda, according to UCC. 52\% of Ugandan households are reported to have access to mobile phone, equal to the Sub-Saharan Africa average\cite{UgandaTel12}\cite{CountryRe12}.
+
+\noindent However the international consultancy firm PricewaterhouseCoopers (PWC) predicts that this number could rise to 25 million, 70\% of Uganda’s population, by 2015. With penetration rates still below 40\%, PWC argues that there is huge potential for growth.
+
+\noindent The Telecoms industry grew by 37\% in 2010; an estimated 3.5 million new subscribers in the year. Penetration rates for Mobile, Fixed, and Internet Services indicates that there is good potential for further growth. Mobile penetration for voice is at 38\% while Fixed-Line penetration stands at 1.2\%, and the number of internet users grew to 4 million at the end of 2010 (a penetration 11.3\%)\cite{CountryRe12}.
+
+\noindent The Mobile, Fixed, and Internet market is shared by the following operators: MTN, Airtel, Orange, Warid Telecom and UTL. With MTN market shares rising from 43.6\% in 2009 to 47.0\% in 2010, Airtel market shares rising from 20.2\% in 2009 to 17.0\% in 2010, Orange market shares rising from2.2\% in 2009 to 4.0\% in 2010, Warid Telecom market shares rising from 12.1\% in 2009 to 15.7\% in 2010, UTL market shares rising from 21.9\% in 2009 to 16.3\% in 2010. Clearly showing that MTN is the dominant mobile player, and the fight for market share is dynamic\cite{UgandaTel12}.
+
+\noindent By the end of 2012 market penetration rates in Uganda's telecoms sector was at Mobile	55\%, Fixed	1\% and Internet	16\%\cite{CountryRe12}.
+
+\noindent Available statistics1 also indicates the following;  Mobile Penetration (per 100 people) - 50.5, Fixed penetration (per 100 people) - 0.48, Internet Penetration (per 100 people) - 21.48 (2012), Internet users 7.5 million (2012), Internet wireless/mobile subscriptions - 1.5 million, Fixed internet subscribers- 90,000, Broadband Penetration - 9\% (2012), PC Penetration (Number of PCs per 100) - 2.3 (2012), Computers Assembled in Uganda - 500,000, Number of registered ICT companies - 350\cite{Kimberly11}.
+
+\noindent The above data demonstrates that some achievements have been realized in the last decade or so. However, the country needs move further ahead if it is to harness ICTs for further accelerated development and become a middle income country by 2040, as stipulated in Vision 2040\cite{Kimberly11}\cite{ Nora10}.
+
+\noindent With penetration rates still below 40\%, there is still room for growth in the Mobile and Internet sectors in Uganda. Mobile subscriber growth is
+expected to reach 25 million by 2015; nearly double the subscriber rate at the end of 2010\cite{MINISTRYOF12}.
+
+\noindent Mobile phones are being used for different purposes. Students use mobile phone to discuss with/pass information about class assignment to their class mates very often, sending text messages to each other. Teenagers use text messaging to arrange times to chat and to remind each other of arrangement already made, phones are also used to coordinate with both friends and family as well as to chat or gossip\cite{Kimberly11}. 
+
+\noindent Mobile phones are used for services such as; Pay school fees using Mobile money enabled school fees settlement schemes Mobile utility settlement plans with MTN, UTL and Airtel introducing water and TV payment services. It is believed that these new services have over the course of the year emerged as strong subscription drivers, complimenting the price based sources of competitive advantage in the customer acquisition race\cite{Post11}.  
+
+\noindent {\Large \textbf{Barriers to usage.}} \\
+The barriers differ from one age group to another. However, generally, access is the biggest barrier. By access I mean not only access to the internet but also access to technology and tools. This is especially true upcountry and in schools where students don’t have access to a computer with free access to the internet. The other barrier is limited skills\cite{CountryRe12}.
+
+\noindent Overcoming such barriers would require the government to integrate ICT in all government programmes including school curricula. This will probably be the first step towards solving the two challenges of access and limited skills\cite{UgandaTel12}.
+centres, public payphones, multipurpose community telecentres, ICT laboratories in government-aided secondary schools, e-health or telemedicine projects, and call centres. In addition, a number of research and postal support projects have been implemented.
+
+\noindent Lack of equipment in schools, lack of electricity, mainly in the rural areas, the lack of sufficient ICT infrastructure in a number of areas and the currently high cost of Internet access are some of the barriers to the use of ICT\cite{UgandaTel12}.
+
+\noindent Challenges/ obstacles of the ict tools also include; Limited funding for deployment, The digital divide (Inequality among citizens in access to and use of technology), High cost of accessing/utilising the tools, Lack of citizens’ involvement in development, Lack of awareness of the existence of these tools, Poor appreciation by citizens of the utility of these tools, Lack of/ inadequate government	involvement, Minimal trust by elected representatives and government officials, Government and local administration’s resistance to change, Citizens’ distrust of the Internet and Citizens resistance to change\cite{Rikke10}.  
+
+\noindent {\Large \textbf{Type of phones used.}}\\
+\noindent Types of phone in use in Uganda is not known, but when there a promotions the service providers then there are particular phone place in the market like recently multiple line handset offerings were as follows: - Warid’s “daboline”; a ZTE manufactured dual sim handset that retailed for Shs 60,000 with Shs 75,000 worth of airtime, Airtel’s “salongo”; a dual line phone with an introductory retail price of Shs 59,900 with Shs 60,000 worth of airtime.  Orange’s “Nalongo”; a dual sim phone with an introductory retail price of Shs 69,000 with Shs 500 worth of airtime\cite{Post11}.
+
+\noindent {\Large \textbf{Frequency of ICT communication.}} \\
+\noindent The short message service (SMS) is popular in Uganda. According to UCC, some 294 million SMS messages were sent during the January–March 2009 period, compared to 190 million in the preceding quarter (October–December 2008). And operators now offer information services via SMS, including news, weather forecasts and sports results. The use of SMS to ask for information from expert sources is another way that communications can be improved for rural residents. Such a service was launched in June 2009, for people to send a query by SMS on, for example, farming techniques, and receive an answer from a searchable database. For users who have difficulties with reading or writing, “voice SMS” is particularly useful, through which people can send pictures or short voice messages. Uganda Telecom and Warid Telecom are among those providing this service\cite{Post11}\cite{ Nora10}.
+
+%\noindent {\Large \textbf{Forms of communication related to water issues.}}\\
+
+\noindent {\Large \textbf{Service providers, the costs associated with ICT communication (mobile/data plans).}}\\
+\noindent \textbf {Orange} SIM pack go for 1,500/= and you get 500/= free airtime valid for 30 days to get started. With orange there a choice between 2 Tariff Plans: Talk Now per second designed for users who make short calls. All local calls Orange to Orange  2/= , All local calls to other networks	6/= per sec (tax included).SMS tariffs Orange to Orange	 50 /=, Orange chat SMS	 50 /=, All other local networks	50 /=, To Orange Zone (Orange Kenya)	90 /=, Other international destinations	220 /=  per SMS (tax included). mobile internet tariffs  0.9 /= per KB\cite{Orange13}.
+
+\noindent Talk Now per minute designed for users who make longer calls: All local calls Orange to Orange  180/=, All local calls to other networks	300/= per min (tax included). SMS tariffs: 	Orange to Orange	 50 /=, Orange chat SMS	 50 /=, All other local networks	50 /=, To Orange Zone (Orange Kenya)	90 /=, Other international destinations	220 /= per SMS (tax included). mobile internet tariffs  0.9 /= per KB\cite{Orange13}.
+
+\noindent \textbf {Warid} Prepaid Tariff Plans Freedom per Second On-net (Warid to Warid) Peak (8am-9pm) 4/= Off Peak (9pm-8am) 4/=. Off-net (to other networks) 4/= peak,	4/= off peak, SMS (Warid to Warid) 100/= peak,	100/= off peak. SMS (to other networks) 100/= peak	100/= off peak\cite{Warid13}.
+
+\noindent Freedom per Minute On-net (Warid to Warid)	240/= peak and	240/= off peak. Off-net (to other networks)	240/=	peak and 240/= off peak. SMS (Warid to Warid)	100/= peak	100/= off peak. SMS (to other networks)	100/= peak 	100/= off peak\cite{Warid13}.
+
+\noindent \textbf { Airtel} Tariffs by destination, Airtel to Aitel for a duration of 56 seconds and to all other networks for a duration of 40 seconds costs 200/-. Airtel to Western Europe, North America, South Africa, Japan, UK	for 20 seconds costs	450/=. Airtel to India, Lebanon, U.A.E.	for 20 seconds	450/=. Tariffs exclude VAT and Excise Duty\cite{ Airtel13}.
+
+\noindent SMS tariffs SMS Rates Local	88/=, SMS Rates International	220/=, SMS Rates information	Content \& Vendor Specific\cite{ Airtel13}.
+
+\noindent \textbf { UTL} Tariffs Prepaid Mobile Lines Connection fee		1,000 FnF change request		500  On Net	Peak	* 4, 	Off Peak	* 4, Off Net	Peak	4 	Off Peak	4 Per Second Special Destinations	All Day	299 Per Second. Safaricom, Vodacom, Rwandatel, UCOM-Burundi, Prefered International Detinations*	All Day	450 per second.Rest of East Africa (Excluding Partners)	All Day	525 per second. International Other	All Day	750 per second. GMSS (e.g. Iridium), Thuraya, Immarsat	All Day	12,350 per second\cite{ utl13}.
+
+\noindent SMS	 On-net	Peak	90, 	Off-Peak	50, Jazz/Vibe	Peak	90, 	Off-Peak	50, Off-net	All Day	90, International	All Day	180, SMS Info	All Day	165, Bulk SMS	All Day	111
+Voice SMS	Sending	150, 	1st Retrieval	0, 	Subsequent Retrievals	50, 	Forward	150, 	Group	150. Video Call	All day	400, GPRS/WAP/WEB	All Day	1.3, MMS	All day	300\cite{ utl13}.
+
+\noindent \textbf { MTN} starter pack goes for UGX 2,000 with FREE airtime of UGX 500 pre-loaded\cite{MTN13}
+
+\noindent Internet Pricing as of June 2011							
+Retail Modem Prices the lowest being Sh.25,000, medium Sh.59,000 and high Sh.110,000. Monthly Bundle Rates, the lowest of 500 Mb is at Sh. 24,000 and highest at Sh. 25,000. 1Gb, the lowest price is at Sh. 30,000, medium at Sh. 39,200 and highest price at Sh. 45,000. Unlimited lowest Sh. 60,000, medium at Sh. 120,000 and high at Sh. 299,000. Dedicated Packages 512 kbps lowest price is at \$ 280, medium at  \$ 300 and highest at \$ 450. 1 mbps lowest at \$ 600 and highest at \$ 700\cite{Post11}\cite{UGANDA11}.
+
+\noindent \textbf{NGO} \\
+\noindent Studies show that there are numerous tools being used in promoting civic participation in Uganda, most of them having been deployed during the run up to the February 2011 elections. Organisations are increasingly using ICT in their work with the mobile phone, social media and crowd sourcing gaining popularity\cite{Ashnah12}. 
+
+\noindent The Uganda National NGO Forum run a ‘Face  the Citizens’ show aimed at providing an interactive forum for Ugandans to engage with political candidates on accountability and key issues in the run-up to the elections. Participants phoned into the lives debates and SMSed, emailed, tweeted and posted via Facebook, their opinions and questions. In addition, the NGO Forum launched the ‘Citizen’s Manifesto’ which detailed information about key issues citizens needed candidates to tackle once elected into office. The manifesto was promoted on numerous radio talk shows and during the ‘Face the Citizens’ TV debates\cite{Ashnah12}.
+
+\noindent Furthermore, the Electoral Commission and other Civil Society Organisations (CSOs) made use of SMS, radio and TV to sensitise and create awareness about the voting process. 
+
+\noindent BOSCO-Uganda is an organization breaking the silence and isolation caused by war using collaborative ICT solutions\cite{Ashnah12}\cite{Breaking09}. 
+
+\noindent {\Large \textbf{ cooperations with providers }}.\\
+\noindent The type of cooperation among providers is interconnection traffic, whereby there is sharing of information concerning the amount of traffic between the providers.
+
+
+\bibliography{refs3}	
+\end{document}
+
+
