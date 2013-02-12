@@ -1,0 +1,38 @@
+\begin{tikzpicture}[node distance=1.5cm, shorten >=2pt, shorten <=2pt, thick, auto]
+
+
+\tikzstyle{box} = [
+    rectangle,rounded corners,draw=black, top color=white, very thick, inner sep=1em, minimum size=3em,drop shadow]
+
+ 
+\node[box, bottom color=gray!10, text width = 11.7cm, text centered] at (-1.4,0) (prepackage) {Prepackage - Current Situation};
+
+\node[box, bottom color=yellow!50, text width = 6.5cm, text centered] at (-4,2) (packagei) {Package I - Communication Framework};
+
+\node[box, bottom color=green!50,  text width = 2.7cm, text height = 2.4cm, text centered] at (3,3) (packageiii) {Package III - Data Collection and Analysis};
+
+
+\node[box,  bottom color=orange!50] at (-7,4) (packageiia) {IIa};
+
+\node[box,  bottom color=orange!50] at (-5,4) (packageiib) {IIb};
+
+\node[box,  bottom color=orange!50] at (-3,4) (packageiic) {IIc};
+
+\node[box,  bottom color=orange!50] at (-1,4) (packageiid) {IId};
+
+
+
+\path[->]
+  (prepackage) edge (packagei)
+  (packagei) edge (packageiia)
+  (packagei) edge (packageiib)
+  (packagei) edge (packageiic)
+  (packagei) edge (packageiid)
+;
+
+\path[->, dotted]
+  (packageiii) edge (prepackage)
+;
+
+
+\end{tikzpicture} 
