@@ -32,6 +32,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows,shadows,petri,positioning}
 %\usetikzlibrary{fit}					% fitting shapes to coordinates
+\usepackage{pgfgantt}
 
 % End by Simon =============================================
 
@@ -106,6 +107,14 @@ Should give in full details the methodology to be used (point4)
 \label{tikz:researchpackages}
 \end{figure} 
 
+\begin{figure}
+\begin{center}
+ \input{workplan.tex}
+\end{center}
+\caption{Workplan}
+\label{tikz:workplan}
+\end{figure} 
+
 Champanis and Rivett \cite{champanis2012reporting} state: \begin{quote}
 ``Based on our experience and focus on rural environments, our
 approach to ICT development has been that the investigation of
@@ -118,10 +127,10 @@ customised solution.''\end{quote}
 
 A set of research packages is presented that allows to build up a well tailored but still scalable solution that - beside of helping people directly -  gives space to investigate on research relevant questions in the field of computer science and further sociology, development aid and economics. 
 
-Figure~\ref{tikz:researchpackages} explains the research packages hierarchy: The small Prepackage analyses the context. In Package I the main framework for future project plug-ins is designed. The actual scientific part from a computer science perspective is done in Package II whose subpackages can be implemented individually. Package III is a parallel ongoing process that profits from improvements in Packages I\&II.
+Figure~\ref{tikz:researchpackages} explains the research packages hierarchy: The small Package I analyses the context. In Package II the main framework for future project plug-ins is designed. The actual scientific part from a computer science perspective is done in Package III whose subpackages can be implemented individually. Package IV is a parallel ongoing process that profits from improvements in Packages I\&III.
 
 
-\subsubsection*{Prepackage: Analysis of the current situation}
+\subsubsection*{Package I: Analysis of the current situation}
 \paragraph{Goal} Get an overview of mobile ICT usage and water management in rural Uganda
 \paragraph{Method}
 In the field of mobile ICT information is aggregate from cooperation with governmental institutions, local service provides and by detailed literature study:
@@ -135,7 +144,7 @@ In the field of mobile ICT information is aggregate from cooperation with govern
 In the field of drinking water additional input comes from partnership with local NGOs.
 \begin{enumerate}
  \item Analysis of the drinking water need amongst population and its challenges
- \item Further data will be collected during the project as a result of Package III
+ \item Further data will be collected during the project as a result of Package IV
 \end{enumerate}
 
 
@@ -144,7 +153,7 @@ In the field of drinking water additional input comes from partnership with loca
 
 
 
-\subsubsection*{Package I: Design of a communication channel}
+\subsubsection*{Package II: Design of a communication channel}
 \paragraph{Goal} Design a inter-user communication channel that is user friendly, low-cost, reliable, secure and information rich
 \paragraph{Method} A first substep evaluates different communication channels. Text-, graphical- and voice based methods are compared on different generations of phones. Depending on their connection standards (GSM, GPRS, 3G) and application platforms supported (SMS, Java Me, Android) best possible options are chosen. Challenges occur in the following areas:
 \begin{itemize}
@@ -162,7 +171,7 @@ The success of such an system is unpredictable. Hence we suggest an iterative ap
 
 
 
-\subsubsection*{Package IIa: Quality control}
+\subsubsection*{Package IIIa: Quality control}
 \paragraph{Goal} Achieve high quality information collected at a centralised agent but also sent to individual receivers 
 \paragraph{Method} According to \cite{birnbaum2012automated} supervised and unsupervised machine learning methods are feasible to classify manually generated data in health surveys in Tanzania and Uganda. Widely used machine learning algorithms could be modified in order to not just classify but rather rate user message according to a scale of trust. Additionally the knowledge of the crowd is used to label messages and hence a  supervised learning on initially unlabelled data is performed - similar to a supervised spam filter. Out of this, a general trust giving and learning (human and machine based) distributed network could be generated.
 
@@ -179,41 +188,41 @@ This contains the following areas of risk:
 
 
 
-\subsubsection*{Package IIb: Context analysis}
+\subsubsection*{Package IIIb: Context analysis}
 \paragraph{Goal} Gather context data of users and messages and provide information accordingly
 
 \paragraph{Method}
 Four different fields of study can be divided:
 \begin{description}
- \item [User context] Albeit low cost feature phones provide just limited sensor functionality, they allow nevertheless access to basic context information like position (Cell site or GPS), time and number of contacts (address book). Out of this, additional contextual information like weather condition can be added.
- \item [Message content and context] To get a meaningful information transfer on water quality between humans and a machine it is mandatory to understand the content of a message either by the use specific questioning and answer mechanisms (e.g. input form) or by mining data out of unspecific messages. Later is current field of research, e.g in the area of text messages \cite{aggarwal2012mining}. This gives a high degree of freedom to test, redesign and evaluate state of the art algorithms. Once functioning methods are available, they can be used as well to support subfield one (User context) by mining additionally user context information out of the exchanged messages. 
- \item [Context information provision] Having filtered data, most relevant information is provided to the users, (e.g. closest working water source, closest available mechanic, water shortage in specific area, water preparation information). The task is either done by a machine- or human agent for which a specific interface would be designed.
+ \item [User context] Albeit low cost feature phones provide just limited sensor functionality, they allow nevertheless access to basic context information like position (cell site or GPS), time and number of contacts (address book). Out of this, additional contextual information like weather condition can be added.
+ \item [Message content and context] To get a meaningful information transfer on water quality between humans and a machine it is mandatory to understand the content of a message either by the use of a specific questioning and answer mechanisms (e.g. input form) or by mining data out of generic messages. Later is current field of research, e.g in the area of text messages \cite{aggarwal2012mining}. This gives a high degree of freedom to test, redesign and evaluate state of the art algorithms. Once functioning methods are available, they can be used as well to support subfield one (User context) by mining additionally user context information out of the exchanged messages. 
+ \item [Context information provision] Having filtered data, most relevant information is provided to the users (e.g. closest working water source, closest available mechanic, water shortage in specific area, water preparation information). The task is either done by a machine- or human agent for which a specific interface would be designed.
  \item [Contextual information presentation] The gained context information can be used to present the information in more readable way, e.g. by using specific graphics.
 \end{description}
 
 Risks in this package are low since goals and functionality are scalable depending on success of basic experiences.
 
 
-\subsubsection*{Package IIc: Water mapping}
+\subsubsection*{Package IIIc: Water mapping}
 \paragraph{Goal} Map water status information on the web
-\paragraph{Method} Together with local partners\footnote{http://wwww.spactialcollective.com} an interface is designed that allows spacial mapping on a web platform.
+\paragraph{Method} Together with local partners\footnote{http://wwww.spactialcollective.com}, an interface is designed that allows spacial mapping of water information on a web platform.
 
-\subsubsection*{Package IId: Incentives and gamification}
+\subsubsection*{Package IIId: Incentives and gamification}
 \paragraph{Goal} Analyse methods to get more user participation
 \paragraph{Method}
-The so far described intelligent network is improved by testing and comparing different incentives and gaming approaches. Knowledge from Package IIb is used to create social incentives. Comparative studies similar to \cite{blaschkeextrinsic} are performed. 
+The so far described intelligent network is improved by testing and comparing different incentives and gaming approaches. Knowledge from Package IIIb is used to create social incentives. Comparative studies similar to \cite{blaschkeextrinsic} are performed. 
 
-\simon{@Jonathan: Maybe you can add here something, this is definitely not (yet) my field of expertise}
+\simon{@Jonathan: Maybe you can add here some content, this is definitely not (yet) my field of expertise}
 
-\subsubsection*{Package III: Data collection and analysis}
-\paragraph{Goal} Use the built system to collect data and use it for further improvements
+\subsubsection*{Package IV: Data collection and analysis}
+\paragraph{Goal} Use the built system to collect data and improve it accordingly
 \paragraph{Method}
 
 \begin{itemize}
- \item If successful, the platform from Project I and the modules from Project II provide a large amount of data that can be used even outside the scope of the water sector and computer science. Since data is accumulated from the first implementation of Project I, this is a parallel ongoing process.
- \item The interface to a centralised human agent (introduced Package IIb) can be used to conduct surveys where the data accumulated from the bottom-up network does not provide the necessary information.
+ \item If successful, the platform from Package II and the modules from Package III provide a large amount of data that can be used even outside the scope of the water sector and computer science. Data accumulation is a parallel ongoing process from the beginning of Package II.
+ \item The interface to a centralised human agent (introduced in Package IIIb) can be used to conduct surveys for cases where the data accumulated from the bottom-up network does not provide the necessary information.
  
- \item Information collected on water access (average distance travelled for water access, pump durability, water well users profile) can be used to improve Package I\&II.
+ \item Information collected on water access (average distance travelled for water access, pump durability, water well users profile) can be used to improve Package II\&III.
 \end{itemize}
 
 
