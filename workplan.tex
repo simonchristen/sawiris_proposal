@@ -1,0 +1,25 @@
+\begin{ganttchart}[
+y unit chart=0.7cm,
+x unit=0.7cm,
+vgrid={*3{dotted},*1{dashed},*3{dotted},*1{dashed},*3{dotted}},
+bar height=.5
+]{12}
+ \gantttitle{Year 1}{4}
+ \gantttitle{Year 2}{4}
+ \gantttitle{Year 3}{4} \\
+ %\gantttitlelist{1,...,4}{1} \gantttitlelist{1,...,4}{1} \gantttitlelist{1,...,4}{1} \\
+   
+ \ganttbar[bar/.style={top color=white, bottom color=gray!10,  rounded corners,drop shadow}]{Packet I}{1}{1} \ganttnewline
+ \ganttbar[bar/.style={top color=white, bottom color=yellow!50,  rounded corners,drop shadow}]{Packet II}{2}{5} \ganttnewline
+ \ganttmilestone{Main Framework}{5} \ganttnewline 
+ 
+ \ganttbar[bar/.style={top color=white, bottom color=orange!50,  rounded corners,drop shadow}]{Packet IIIa}{6}{8} \ganttnewline
+ \ganttbar[bar/.style={top color=white, bottom color=orange!50,  rounded corners,drop shadow}]{Packet IIIb}{6}{10} \ganttnewline
+ \ganttmilestone{Main Results}{8} \ganttnewline 
+ \ganttbar[bar/.style={top color=white, bottom color=orange!50,  rounded corners,drop shadow}]{Packet IIIc}{9}{9} \ganttnewline
+ \ganttbar[bar/.style={top color=white, bottom color=orange!50,  rounded corners,drop shadow}]{Packet IIId}{10}{10} \ganttnewline
+ \ganttbar[bar/.style={top color=white, bottom color=green!50,  rounded corners,drop shadow}]{Packet IV}{3}{11} \ganttnewline
+ \ganttbar[bar/.style={top color=white, bottom color=blue!80,  rounded corners,drop shadow}]{Report}{11}{12}
+
+
+\end{ganttchart}

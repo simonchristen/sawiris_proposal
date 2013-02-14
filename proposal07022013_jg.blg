@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: proposal07022013_jg.aux
+The style file: plain.bst
+Database file #1: proposal07022013_jg.bib
+Warning--empty journal in blaschkeextrinsic
+Warning--empty year in blaschkeextrinsic
+You've used 7 entries,
+            2118 wiz_defined-function locations,
+            529 strings with 5400 characters,
+and the built_in function-call counts, 2599 in all, are:
+= -- 250
+> -- 131
+< -- 3
++ -- 52
+- -- 44
+* -- 168
+:= -- 421
+add.period$ -- 23
+call.type$ -- 7
+change.case$ -- 42
+chr.to.int$ -- 0
+cite$ -- 9
+duplicate$ -- 110
+empty$ -- 205
+format.name$ -- 44
+if$ -- 560
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 8
+newline$ -- 37
+num.names$ -- 14
+pop$ -- 63
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 0
+skip$ -- 74
+stack$ -- 0
+substring$ -- 121
+swap$ -- 31
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 26
+warning$ -- 2
+while$ -- 23
+width$ -- 8
+write$ -- 76
+(There were 2 warnings)

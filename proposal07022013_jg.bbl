@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{aggarwal2012mining}
+Charu~C Aggarwal and ChengXiang Zhai.
+\newblock {\em Mining text data}.
+\newblock Springer, 2012.
+
+\bibitem{birnbaum2012automated}
+Benjamin Birnbaum, Brian DeRenzi, Abraham~D Flaxman, and Neal Lesh.
+\newblock Automated quality control for mobile data collection.
+\newblock In {\em Proceedings of the 2nd ACM Symposium on Computing for
+  Development}, page~1. ACM, 2012.
+
+\bibitem{blaschkeextrinsic}
+Sean~M Blaschke, Peter~P Carroll, Daniela~Rojas Chaves, Michael~G Findley,
+  Madeleine~C Gleave, Robert~N Morello, and Daniel~L Nielson.
+\newblock Extrinsic, intrinsic, and social incentives for unicef’s
+  crowdsourcing development information in uganda: A field experiment.
+
+\bibitem{brown2012water}
+D.~Brown, G.~Marsden, and U.~Rivett.
+\newblock Water alert!: using mobile phones to improve community perspective on
+  drinking water quality in south africa.
+\newblock In {\em Proceedings of the Fifth International Conference on
+  Information and Communication Technologies and Development}, pages 230--240.
+  ACM, 2012.
+
+\bibitem{champanis2012reporting}
+M.~Champanis and U.~Rivett.
+\newblock Reporting water quality: a case study of a mobile phone application
+  for collecting data in developing countries.
+\newblock In {\em Proceedings of the Fifth International Conference on
+  Information and Communication Technologies and Development}, pages 105--113.
+  ACM, 2012.
+
+\bibitem{goodman2010coming}
+Seymour Goodman and Andrew Harris.
+\newblock The coming african tsunami of information insecurity.
+\newblock {\em Communications of the ACM}, 53(12):24--27, 2010.
+
+\bibitem{knoche2012text}
+H.~Knoche and J.~Huang.
+\newblock Text is not the enemy-how illiterates use their mobile phones.
+\newblock In {\em NUIs for New Worlds: New Interaction Forms and Interfaces for
+  Mobile Applications in Developing Countries-CHI’2012 workshop}, 2012.
+
+\end{thebibliography}
