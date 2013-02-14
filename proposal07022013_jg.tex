@@ -123,8 +123,8 @@ Should cover state of research and references (point3), and innovativeness of re
 
 
 \section{Methodology}\label{methodology}
-\subsection{Methodology}\label{metho}
-Should give in full details the methodology to be used (point4)
+%\subsection{Methodology}\label{metho}
+%Should give in full details the methodology to be used (point4)
 \begin{figure}
 \begin{center}
  \input{methodology.tex}
@@ -142,34 +142,29 @@ Should give in full details the methodology to be used (point4)
 \label{tikz:workplan}
 \end{figure} 
 
-Champanis and Rivett 
-\citet{champanis2012reporting} state: \begin{quote}
-``Based on our experience and focus on rural environments, our
-approach to ICT development has been that the investigation of
+\citet{champanis2012reporting} experienced that in a ICT4D project ``... the investigation of
 the local context and solutions responding to local needs are more
-valuable and sustainable than a general “one-size-fits-all” design.
-Whilst this speaks against the notions of “scalability”, which is
-usually a desired outcome for IT solutions, we believe that rural
+valuable and sustainable than a general one-size-fits-all design.'' Also they believe that ``... rural
 and under-resourced environments require a more detailed and
-customised solution.''\end{quote} 
+customised solution.''
 
-A set of research packages is presented that allows to build up a well tailored but still scalable solution that - beside of helping people directly -  gives space to investigate on research relevant questions in the field of computer science and further sociology, development aid and economics. 
+We hence present an adaptive framework consisting of a set of research packages that allows to build up a well tailored but still scalable solution that - beside of helping people directly -  gives space to investigate on research relevant questions in the field of computer science and further sociology, development aid and economics. 
 
-Figure~\ref{tikz:researchpackages} explains the research packages hierarchy: The small Package I analyses the context. In Package II the main framework for future project plug-ins is designed. The actual scientific part from a computer science perspective is done in Package III whose subpackages can be implemented individually. Package IV is a parallel ongoing process that profits from improvements in Packages II\&III.
+Figure~\ref{tikz:researchpackages} explains the research packages hierarchy: The small Package I analyses the context. In Package II the main framework for future project plug-ins is designed. Computer science is the basis for Package III whose subpackages can be implemented individually. Package IV is a parallel ongoing process that profits from improvements in Packages II\&III. Figure~\ref{tikz:workplan} shows the workplan for the suggested packages.
 
 
 \subsubsection*{Package I: Analysis of the current situation}
-\paragraph{Goal} Get an overview of mobile ICT usage and water management in rural Uganda
+\paragraph{Goal} Get an overview of mobile ICT usage and water management in rural Uganda and derive requirements
 \paragraph{Method}
-In the field of mobile ICT information is aggregate from cooperation with governmental institutions, local service provides and by detailed literature study:
+In the field of mobile ICT information is aggregated from cooperation with governmental institutions, local service provides and by detailed literature study:
 \begin{enumerate}
  \item Distribution of cell phones (by model, user age, area)
  \item Usage distribution (by time, frequency and service)
  \item Analysis of finances (income per user, cost of different services per user, money spent for different services per user)
  \item Analysis of technology (cellular network standards, cell sizes, user per cells, quality of service, future investments, availability of electricity)
- \item Analysis of hindrances for a more frequent usage (finances, easy of use, illiteracy, privacy concerns)
+ \item Identify inhibits for a more frequent usage (finances, easy of use, illiteracy, privacy concerns)
 \end{enumerate}
-In the field of drinking water additional input comes from partnership with local NGOs.
+In the field of drinking water additional input comes from partnership with local NGOs:
 \begin{enumerate}
  \item Analysis of the drinking water need amongst population and its challenges
  \item Further data will be collected during the project as a result of Package IV
@@ -184,32 +179,35 @@ In the field of drinking water additional input comes from partnership with loca
 
 %=======
 %>>>>>>> upstream/master
-\subsubsection*{Package II: Design of a communication channel}
-\paragraph{Goal} Design a inter-user communication channel that is user friendly, low-cost, reliable, secure and information rich
+\subsubsection*{Package II: Design of a communication infrastructure}
+\paragraph{Goal} Design an inter-user communication channel that is user friendly, low-cost, reliable, secure and information rich
 \paragraph{Method} A first substep evaluates different communication channels. Text-, graphical- and voice based methods are compared on different generations of phones. Depending on their connection standards (GSM, GPRS, 3G) and application platforms supported (SMS, Java Me, Android) best possible options are chosen. Challenges occur in the following areas:
 \begin{itemize}
- \item Low cost feature phones (``a modern low-end mobile phone that is not a smart phone'' [Wikipedia]) are widely available in Uganda. Their drawback is that software has to be implemented manufacturer depending and in general allows just limited functionality \cite{champanis2012reporting}.
- \item Access to provider data (calls with user id, text messages, cell info) is difficult to obtain. A possible solution is to use just mobile data services and transfer messages based on an extra developed service.
- \item Literacy rate of Uganda is around 66 percent [Wikipedia]. Tailored solutions for illiterates have successfully been implemented \cite{brown2012water}. By developing special input methods, one has to be aware that a very important reason for people to buy a phone is due to its associated status and not its features \cite{knoche2012text}.
- \item Low cost transmission is necessary to achieve a high user participation. Prices for SMS make up a higher percentage of the monthly budget than in high income countries. An alternative approach is to provide hardware and airtime to selected user group in order to conduct studies.
- \item Free hardware and airtime is likely to be misused. Champanis and Rivet report that ``Users would fill up the phone with music and video downloads'' \cite{champanis2012reporting} to an extend that it is not usable for the experiment anymore.
- \item User trust and information security is one of Africas biggest challeng, this due to weak privacy laws, user awareness, political instability and not maintained software \cite{goodman2010coming}.
+ \item Low cost feature phones (``a modern low-end mobile phone that is not a smart phone'' [Wikipedia]) are widely available in Uganda. Their drawback is that software has to be implemented manufacturer depending and in general allows just limited functionality \citep{champanis2012reporting}.
+ \item Access to provider owned data (calls with user id, text messages, cell info) is difficult to obtain. A possible solution is to use just mobile data services and transfer messages based on an extra developed service.
+ \item Literacy rate of Uganda is around 66 percent [Wikipedia]. Tailored solutions for illiterates have successfully been implemented \citep{brown2012water}. By developing special input methods, one has to be aware that a very important reason for people to buy a phone is due to its associated status and not its features \citep{knoche2012text}.
+ \item Low cost transmission is necessary to achieve a high user participation. Prices for SMS in Uganda make up a higher percentage of the monthly budget than in high income countries. An alternative approach is to provide hardware and airtime to selected user groups in order to conduct studies.
+ \item Free hardware and airtime is likely to be misused. Champanis and Rivet report that ``Users would fill up the memory or the phone with music and video downloads'' to an extend that it is not usable for the experiment anymore.
+ \item User trust and information security is one of Africa's biggest challenges, this due to weak privacy laws, user awareness, political instability and not maintained software \citep{goodman2010coming}.
 \end{itemize}
 
-In a second substep we analyse the information flow needed to provide a water quality information and monitoring network. The implementation (third substep) completes Package I. To the moment it remains an open question if a self designed device for data transmission over the mobile network would fulfil this purpose even better than a cell phone based service. 
+In a second substep we analyse the information flow needed to provide a water quality information and monitoring network. The implementation (third substep) completes Package I.
 
-The success of such an system is unpredictable. Hence we suggest an iterative approach based on trial and error method. Lessons learned from other projects are considered and results reported to the community.
+\paragraph{Risk} The success of such an system is unpredictable. Hence we suggest an iterative approach based on trial and error method. Lessons learned from other projects are considered and results reported to the community.
+
+To the moment it remains an open question if a self designed device for data transmission over the mobile network would fulfil this purpose even better than a cell phone based service. 
+
 
 
 
 \subsubsection*{Package IIIa: Quality control}
 \paragraph{Goal} Achieve high quality information collected at a centralised agent but also sent to individual receivers 
-\paragraph{Method} According to \cite{birnbaum2012automated} supervised and unsupervised machine learning methods are feasible to classify manually generated data in health surveys in Tanzania and Uganda. Widely used machine learning algorithms could be modified in order to not just classify but rather rate user message according to a scale of trust. Additionally the knowledge of the crowd is used to label messages and hence a  supervised learning on initially unlabelled data is performed - similar to a supervised spam filter. Out of this, a general trust giving and learning (human and machine based) distributed network could be generated.
+\paragraph{Method} According to \citep{birnbaum2012automated} widely used supervised and unsupervised machine learning methods are feasible to classify fake data in health surveys (multiple choice input on mobile devices) in Tanzania and Uganda. We would like to implement and design algorithms for credibility testing (i.ei to rate user message according to a scale of trust) on more complex messages. Additionally the knowledge of the crowd is used to label messages and hence supervised learning on initially unlabelled data is performed (active learning). Out of this, a general trust giving and learning (human and machine based) distributed network could be generated.
 
 \paragraph{Risk}
 
 \begin{itemize}
- \item The reported lack of data quality in surveys in low income countries could also be the result of the normally used top-down approach \cite{birnbaum2012automated}, whereas a bottom-up approach  (where users have a personal interest on the quality of the data) might not even, or at least less face this problem.
+ \item The reported lack of data quality in surveys in low income countries could be the result of the normally used top-down approach \citep{birnbaum2012automated}, whereas a bottom-up approach  (where users have a personal interest on the quality of the data) might not even face - or at least reduce this problem.
  \item The question resides if a machine learning solution for such a difficult task is an actual benefit for a country where human workforce is cheap (and jobs needed) and technology expensive. We would not be surprised if a mixed solution - highlighting suspicious messages machine- and final classification human based - might be the best solution.
 \end{itemize}
 
@@ -226,15 +224,15 @@ The success of such an system is unpredictable. Hence we suggest an iterative ap
 \paragraph{Goal} Gather context data of users and messages and provide information accordingly
 
 \paragraph{Method}
-Four different fields of study can be divided:
+Four different fields of study can be distinguished:
 \begin{description}
  \item [User context] Albeit low cost feature phones provide just limited sensor functionality, they allow nevertheless access to basic context information like position (cell site or GPS), time and number of contacts (address book). Out of this, additional contextual information like weather condition can be added.
- \item [Message content and context] To get a meaningful information transfer on water quality between humans and a machine it is mandatory to understand the content of a message either by the use of a specific questioning and answer mechanisms (e.g. input form) or by mining data out of generic messages. Later is current field of research, e.g in the area of text messages \cite{aggarwal2012mining}. This gives a high degree of freedom to test, redesign and evaluate state of the art algorithms. Once functioning methods are available, they can be used as well to support subfield one (User context) by mining additionally user context information out of the exchanged messages. 
+ \item [Message content and context] To get meaningful information transfer on water quality between humans and a machine it is mandatory to understand the content of a message either by the use of a specific questioning and answer mechanisms (e.g. input form) or by mining data out of generic messages. Later is a current field of research, e.g in the area of text messages \citep{aggarwal2012mining}. This gives a high degree of freedom to test, redesign and evaluate state of the art algorithms. Once functioning methods are available, they can be used as well to support subfield one (user context) by mining additionally user context information out of the exchanged messages. 
  \item [Context information provision] Having filtered data, most relevant information is provided to the users (e.g. closest working water source, closest available mechanic, water shortage in specific area, water preparation information). The task is either done by a machine- or human agent for which a specific interface would be designed.
- \item [Contextual information presentation] The gained context information can be used to present the information in more readable way, e.g. by using specific graphics.
+ \item [Contextual information presentation] The gained context information can be used to present information in more readable way, e.g. by using specific graphics.
 \end{description}
 
-\paragraph{Risks} in this package are low since goals and functionality are scalable depending on success of basic experiences.
+\paragraph{Risk} in this package is low since goals and functionality are scalable depending on success of basic experiences.
 
 %<<<<<<< HEAD
 
@@ -256,7 +254,7 @@ Four different fields of study can be divided:
 \subsubsection*{Package IIId: Incentives and gamification}
 \paragraph{Goal} Analyze incentive methods to get more user participation, by strengthening the link between user contribution and rewards, using both the \emph{intrinsic motivation} for the mobile scheme (gamification) and the \emph{extrinsic motivation} coming from network externalities (transparency, peer pressure).
 \paragraph{Method}
-Insights collected with Packages I and IIb will be used to create different form of social incentives that we will apply to our intelligent network design. We will first experiment with persuasive technologies \citep{Oinas_Kukkonen2010, fogg2002persuasive} and internal gamification techniques \citep{blaschkeextrinsic, crowley2012gamification} to assess their performance to increase water reporting in our sample. Our assumption, which is in line with the literature, is that the intrinsic motivation of gamification can elicit internal motivation that ensure re-engagement and continuous participation \citep{lin2008elucidating, ling2005using}. It is also proven that its effects are improved in presence of network externalities \citep{lin2011people}. We will then test for extrinsic motivators (rewards, feedbacks on usefulness) and compare the performance of the two groups of incentives. We will structure our research using recent research on motivation theory \citep{davis1992extrinsic, kim2007value}
+Insights collected with Packages II and IIIb will be used to create different form of social incentives that we will apply to our intelligent network design. We will first experiment with persuasive technologies \citep{Oinas_Kukkonen2010, fogg2002persuasive} and internal gamification techniques \citep{blaschkeextrinsic, crowley2012gamification} to assess their performance to increase water reporting in our sample. Our assumption, which is in line with the literature, is that the intrinsic motivation of gamification can elicit internal motivation that ensure re-engagement and continuous participation \citep{lin2008elucidating, ling2005using}. It is also proven that its effects are improved in presence of network externalities \citep{lin2011people}. We will then test for extrinsic motivators (rewards, feedbacks on usefulness) and compare the performance of the two groups of incentives. We will structure our research using recent research on motivation theory \citep{davis1992extrinsic, kim2007value}
 \paragraph{Risk}
 The main risk lies in our ability to implement network-based extrinsic motivations. If we are unable to map networks appropriately, we may have to limit our research to intrinsic motivators such as pure gamifications, rewards and feedbacks. 
 
