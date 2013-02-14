@@ -1,0 +1,120 @@
+\begin{thebibliography}{15}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{pop(2002)}]{population02}
+, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{2002 uganda population and housing census}.
+\newblock \bibinfo{journal}{Source: Uganda Bureau of Statistics} .
+%Type = Article
+\bibitem[{pop(2010)}]{population2010}
+, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{2010 mid-year projected population for town
+  councils}.
+\newblock \bibinfo{journal}{Source: Uganda Bureau of Statistics} .
+%Type = Article
+\bibitem[{Rik(2010)}]{Rikke10}
+, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Ict as a tool for empowerment in uganda}.
+\newblock \bibinfo{journal}{The Centre for Internet Research,} .
+%Type = Article
+\bibitem[{Pos(2011)}]{Post11}
+, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Post and telecommunications annual market review
+  2010/2011}.
+\newblock \bibinfo{journal}{UGANDA COMMUNICATIO COMMISSION} .
+%Type = Book
+\bibitem[{Aggarwal and Zhai(2012)}]{aggarwal2012mining}
+\bibinfo{author}{Aggarwal, C.C.}, \bibinfo{author}{Zhai, C.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Mining text data}.
+\newblock \bibinfo{publisher}{Springer}.
+%Type = Inproceedings
+\bibitem[{Birnbaum et~al.(2012)Birnbaum, DeRenzi, Flaxman and
+  Lesh}]{birnbaum2012automated}
+\bibinfo{author}{Birnbaum, B.}, \bibinfo{author}{DeRenzi, B.},
+  \bibinfo{author}{Flaxman, A.D.}, \bibinfo{author}{Lesh, N.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Automated quality control for mobile data
+  collection}, in: \bibinfo{booktitle}{Proceedings of the 2nd ACM Symposium on
+  Computing for Development}, \bibinfo{organization}{ACM}.
+  p.~\bibinfo{pages}{1}.
+%Type = Article
+\bibitem[{Blaschke et~al.()Blaschke, Carroll, Chaves, Findley, Gleave, Morello
+  and Nielson}]{blaschkeextrinsic}
+\bibinfo{author}{Blaschke, S.M.}, \bibinfo{author}{Carroll, P.P.},
+  \bibinfo{author}{Chaves, D.R.}, \bibinfo{author}{Findley, M.G.},
+  \bibinfo{author}{Gleave, M.C.}, \bibinfo{author}{Morello, R.N.},
+  \bibinfo{author}{Nielson, D.L.}, .
+\newblock \bibinfo{title}{Extrinsic, intrinsic, and social incentives for
+  unicef's crowdsourcing development information in uganda: A field experiment}
+  .
+%Type = Inproceedings
+\bibitem[{Brown et~al.(2012)Brown, Marsden and Rivett}]{brown2012water}
+\bibinfo{author}{Brown, D.}, \bibinfo{author}{Marsden, G.},
+  \bibinfo{author}{Rivett, U.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Water alert!: using mobile phones to improve
+  community perspective on drinking water quality in south africa}, in:
+  \bibinfo{booktitle}{Proceedings of the Fifth International Conference on
+  Information and Communication Technologies and Development},
+  \bibinfo{organization}{ACM}. pp. \bibinfo{pages}{230--240}.
+%Type = Inproceedings
+\bibitem[{Champanis and Rivett(2012)}]{champanis2012reporting}
+\bibinfo{author}{Champanis, M.}, \bibinfo{author}{Rivett, U.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Reporting water quality: a case study of a mobile
+  phone application for collecting data in developing countries}, in:
+  \bibinfo{booktitle}{Proceedings of the Fifth International Conference on
+  Information and Communication Technologies and Development},
+  \bibinfo{organization}{ACM}. pp. \bibinfo{pages}{105--113}.
+%Type = Article
+\bibitem[{Goodman and Harris(2010)}]{goodman2010coming}
+\bibinfo{author}{Goodman, S.}, \bibinfo{author}{Harris, A.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{The coming african tsunami of information
+  insecurity}.
+\newblock \bibinfo{journal}{Communications of the ACM} \bibinfo{volume}{53},
+  \bibinfo{pages}{24--27}.
+%Type = Article
+\bibitem[{Kalemera et~al.(2012)Kalemera, Nalwoga and Wakabi}]{Ashnah12}
+\bibinfo{author}{Kalemera, A.}, \bibinfo{author}{Nalwoga, L.},
+  \bibinfo{author}{Wakabi, W.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{How ict tools are promoting citizen participation in
+  uganda} .
+%Type = Inproceedings
+\bibitem[{Knoche and Huang(2012)}]{knoche2012text}
+\bibinfo{author}{Knoche, H.}, \bibinfo{author}{Huang, J.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Text is not the enemy-how illiterates use their
+  mobile phones}, in: \bibinfo{booktitle}{NUIs for New Worlds: New Interaction
+  Forms and Interfaces for Mobile Applications in Developing Countries-CHI'2012
+  workshop}.
+%Type = Article
+\bibitem[{Mitchell et~al.(2011)Mitchell, Sheana Bull~and and
+  Ybarra}]{Kimberly11}
+\bibinfo{author}{Mitchell, K.J.}, \bibinfo{author}{Sheana Bull~and, J.K.},
+  \bibinfo{author}{Ybarra, M.L.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Cell phone usage among adolescents in uganda:
+  acceptability for relaying health information}.
+\newblock \bibinfo{journal}{Health Education Research} .
+%Type = Article
+\bibitem[{Mulira et~al.(2010)Mulira, Kyeyune and Ndiwalana}]{Nora10}
+\bibinfo{author}{Mulira, N.}, \bibinfo{author}{Kyeyune, A.},
+  \bibinfo{author}{Ndiwalana, A.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Uganda ict sector performance review 2009/2010}.
+\newblock \bibinfo{journal}{Towards Evidence-based ICT Policy and Regulation
+  Volume Two, Policy Paper 13} .
+%Type = Article
+\bibitem[{Scott(2004)}]{Scott04}
+\bibinfo{author}{Scott, N.}, \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{New research findings point to high rates of phone
+  use in no or low service areas}.
+\newblock \bibinfo{journal}{available at
+  http://www.balancingact-africa.com/news/back/balancing-act_203.html} .
+
+\end{thebibliography}

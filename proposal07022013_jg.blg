@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.7)
+The top-level auxiliary file: proposal07022013_jg.aux
+The style file: model2-names.bst
+Database file #1: Sawiris2013.bib
+Warning--to sort, need author or key in population2010
+Warning--to sort, need author or key in population02
+Warning--to sort, need author or key in Rikke10
+Warning--to sort, need author or key in Post11
+Warning--empty author in population02
+Warning--empty author in population2010
+Warning--empty author in Rikke10
+Warning--empty author in Post11
+Warning--empty journal in blaschkeextrinsic
+Warning--empty journal in Ashnah12
+Warning--empty pages in knoche2012text
+You've used 15 entries,
+            2761 wiz_defined-function locations,
+            657 strings with 7125 characters,
+and the built_in function-call counts, 7871 in all, are:
+= -- 637
+> -- 278
+< -- 8
++ -- 113
+- -- 96
+* -- 832
+:= -- 1187
+add.period$ -- 39
+call.type$ -- 15
+change.case$ -- 106
+chr.to.int$ -- 15
+cite$ -- 34
+duplicate$ -- 565
+empty$ -- 557
+format.name$ -- 135
+if$ -- 1474
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 102
+newline$ -- 79
+num.names$ -- 44
+pop$ -- 178
+preamble$ -- 1
+purify$ -- 92
+quote$ -- 0
+skip$ -- 244
+stack$ -- 0
+substring$ -- 260
+swap$ -- 391
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 132
+warning$ -- 11
+while$ -- 42
+width$ -- 0
+write$ -- 199
+(There were 11 warnings)

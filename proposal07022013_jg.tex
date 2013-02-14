@@ -48,7 +48,7 @@
 \maketitle
 
 \begin{abstract}
-To be completed
+
 \end{abstract}
 
 
@@ -76,7 +76,7 @@ We also plan to integrate network-centric rewards such as community checks (e.g.
 \item
 Finally and using the collected information, we will test for the nature of the data sent back (data quality), in terms of content and degree of details. Modules of pattern recognition (via machine-learning) will be implemented to categorize and classify data and to assess the influence communication channels and feedback schemes have on the quality of information collected (while accounting for socio-economic characteristics). This aspect should give us insights generalizable to other sectors and functions.
 \end{enumerate}  
-The thesis will benefit from a close integration with a larger multi-disciplinary project on ``mobile ICT for public services under weak public institutions" under the joint-supervision of Ass. Prof. Isabel Günther (ETH NADEL) and Prof. Gerhard Tr\"{o}ster (ETH Electronic Labs) and with the active collaboration of several research insitutes in Switzerland and in sub-Saharan Africa (ETH-­NADEL, ETH-­SOMS, ETH-­Electronics Lab for Switzerland, Makerere School of Computing and IT for Uganda, iHub Research for Kenya, and University of Dar es Salaam for Tanzania). In particular, the field part of the thesis will be coordinated with Prof. Florence Tushabe at the School of Computing and IT at Makerere University (Uganda). The water-related aspects will benefit from close interactions with Dr. Richard Johnston from EAWAG (Zurich) and from Dr. Niwagaba from the Civil and Environmental Engineering Department at Makerere University.  
+The thesis will benefit from a close integration with a larger multi-disciplinary project on ``mobile ICT for public services under weak public institutions" under the joint-supervision of Ass. Prof.Isabel G\"{u}nther (ETH NADEL) and Prof.Gerhard Tr\"{o}ster (ETH Electronic Labs) and with the active collaboration of several research insitutes in Switzerland and in sub-Saharan Africa (ETH-­NADEL, ETH-­SOMS, ETH-­Electronics Lab for Switzerland, Makerere School of Computing and IT for Uganda, iHub Research for Kenya, and University of Dar es Salaam for Tanzania). In particular, the field part of the thesis will be coordinated with Prof.Florence Tushabe at the School of Computing and IT at Makerere University (Uganda). The water-related aspects will benefit from close interactions with Dr. Richard Johnston from EAWAG (Zurich) and from Dr. Niwagaba from the Civil and Environmental Engineering Department at Makerere University.  
 
 \section{Field context}
 \subsection{Targeted region}
@@ -120,7 +120,6 @@ Should cover state of research and references (point3), and innovativeness of re
 \section{Methodology}\label{methodology}
 \subsection{Methodology}\label{metho}
 Should give in full details the methodology to be used (point4)
-
 \begin{figure}
 \begin{center}
  \input{methodology.tex}
@@ -128,8 +127,7 @@ Should give in full details the methodology to be used (point4)
 \caption{Research packages hirarchy}
 \label{tikz:researchpackages}
 \end{figure} 
-
-Champanis and Rivett \cite{champanis2012reporting} state: \begin{quote}
+\citet{champanis2012reporting} state: \begin{quote}
 ``Based on our experience and focus on rural environments, our
 approach to ICT development has been that the investigation of
 the local context and solutions responding to local needs are more
@@ -144,7 +142,7 @@ A set of research packages is presented that allows to build up a well tailored 
 Figure~\ref{tikz:researchpackages} explains the research packages hierarchy: The small Prepackage analyses the context. In Package I the main framework for future project plug-ins is designed. The actual scientific part from a computer science perspective is done in Package II whose subpackages can be implemented individually. Package III is a parallel ongoing process that profits from improvements in Packages I\&II.
 
 
-\subsubsection*{Prepackage: Analysis of the current situation}
+\subsubsection*{Package I: Analysis of the current situation}
 \paragraph{Goal} Get an overview of mobile ICT usage and water management in rural Uganda
 \paragraph{Method}
 In the field of mobile ICT information is aggregate from cooperation with governmental institutions, local service provides and by detailed literature study:
@@ -162,7 +160,7 @@ In the field of drinking water additional input comes from partnership with loca
 \end{enumerate}
 
 
-\subsubsection*{Package I: Design of a communication channel}
+\subsubsection*{Package II: Design of a communication channel}
 \paragraph{Goal} Design a inter-user communication channel that is user friendly, low-cost, reliable, secure and information rich
 \paragraph{Method} A first substep evaluates different communication channels. Text-, graphical- and voice based methods are compared on different generations of phones. Depending on their connection standards (GSM, GPRS, 3G) and application platforms supported (SMS, Java Me, Android) best possible options are chosen. Challenges occur in the following areas:
 \begin{itemize}
@@ -180,7 +178,7 @@ The success of such an system is unpredictable. Hence we suggest an iterative ap
 
 
 
-\subsubsection*{Package IIa: Quality control}
+\subsubsection*{Package IIIa: Quality control}
 \paragraph{Goal} Achieve high quality information collected at a centralised agent but also sent to individual receivers 
 \paragraph{Method} According to \cite{birnbaum2012automated} supervised and unsupervised machine learning methods are feasible to classify manually generated data in health surveys in Tanzania and Uganda. Widely used machine learning algorithms could be modified in order to not just classify but rather rate user message according to a scale of trust. Additionally the knowledge of the crowd is used to label messages and hence a  supervised learning on initially unlabelled data is performed - similar to a supervised spam filter. Out of this, a general trust giving and learning (human and machine based) distributed network could be generated.
 
@@ -191,13 +189,7 @@ This contains the following areas of risk:
  \item The question resides if a machine learning solution for such a difficult task is an actual benefit for a country where human workforce is cheap (and jobs needed) and technology expensive. We would not be surprised if a mixed solution - highlighting suspicious messages machine- and final classification human based - might be the best solution.
 \end{itemize}
 
-
-
-
-
-
-
-\subsubsection*{Package IIb: Context analysis}
+\subsubsection*{Package IIIb: Context analysis}
 \paragraph{Goal} Gather context data of users and messages and provide information accordingly
 
 \paragraph{Method}
@@ -211,59 +203,54 @@ Four different fields of study can be divided:
 
 Risks in this package are low since goals and functionality are scalable depending on success of basic experiences.
 
-
-\subsubsection*{Package IIc: Water mapping}
+\subsubsection*{Package IIIc: Water mapping}
 \paragraph{Goal} Map water status information on the web
 \paragraph{Method} Together with local partners\footnote{http://wwww.spactialcollective.com} an interface is designed that allows spacial mapping on a web platform.
 
-\subsubsection*{Package IId: Incentives and gamification}
-\paragraph{Goal} Analyse methods to get more user participation
+\subsubsection*{Package III: Incentives and gamification}
+\paragraph{Goal} Analyze incentive methods to get more user participation, by strengthening the link between user contribution and rewards, using both the \emph{intrinsic motivation} for the mobile scheme (gamification) and the \emph{extrinsic motivation} coming from network externalities (transparency, peer pressure).
 \paragraph{Method}
-The so far described intelligent network is improved by testing and comparing different incentives and gaming approaches. Knowledge from Package IIb is used to create social incentives. Comparative studies similar to \cite{blaschkeextrinsic} are performed. 
+Insights collected with Packages I and IIb will be used to create different form of social incentives that we will apply to our intelligent network design. We will first experiment with persuasive technologies \citep{Oinas_Kukkonen2010, fogg2002persuasive} and internal gamification techniques \citep{blaschkeextrinsic, crowley2012gamification} to assess their performance to increase water reporting in our sample. Our assumption, which is in line with the literature, is that the intrinsic motivation of gamification can elicit internal motivation that ensure re-engagement and continuous participation \citep{lin2008elucidating, ling2005using}. It is also proven that its effects are improved in presence of network externalities \citep{lin2011people}. We will then test for extrinsic motivators (rewards, feedbacks on usefulness) and compare the performance of the two groups of incentives. We will structure our research using recent research on motivation theory \citep{davis1992extrinsic, kim2007value}
+\paragraph{Risk}
+The main risk lies in our ability to implement network-based extrinsic motivations. If we are unable to map networks appropriately, we may have to limit our research to intrinsic motivators such as pure gamifications, rewards and feedbacks. 
 
-\simon{@Jonathan: Maybe you can add here something, this is definitely not (yet) my field of expertise}
 
-\subsubsection*{Package III: Data collection and analysis}
+\subsubsection*{Package IV: Data collection and analysis}
 \paragraph{Goal} Use the built system to collect data and use it for further improvements
 \paragraph{Method}
 
 \begin{itemize}
  \item If successful, the platform from Project I and the modules from Project II provide a large amount of data that can be used even outside the scope of the water sector and computer science. Since data is accumulated from the first implementation of Project I, this is a parallel ongoing process.
- \item The interface to a centralised human agent (introduced Package IIb) can be used to conduct surveys where the data accumulated from the bottom-up network does not provide the necessary information.
+ \item The interface to a centralized human agent (introduced Package IIb) can be used to conduct surveys where the data accumulated from the bottom-up network does not provide the necessary information.
  
- \item Information collected on water access (average distance travelled for water access, pump durability, water well users profile) can be used to improve Package I\&II.
+ \item Information collected on water access (average distance traveled for water access, pump durability, water well users profile) can be used to improve Package I\&II.
 \end{itemize}
 
-
-
-\subsection{Chances and risk associated with selected methodology}\label{risk}
-Critical assessment of chances and risks (points8)
-
-\simon{Is actually included already in Section~\ref{metho}, i.e. merge Section~\ref{metho} and \ref{risk}}
-
 \section{Organization}\label{organization}
-As already mentioned, the thesis will benefit from its close relation to a larger multi-disciplinary project on ``mobile ICT for public services under weak public institutions" under the joint-supervision of Ass. Prof. Isabel Günther (ETH NADEL) and Prof. Gerhard Tr\"{o}ster (ETH Electronic Labs), with the active collaboration of several research institutes in Switzerland and in sub-Saharan Africa (ETH-­NADEL, ETH-­SOMS, ETH-­Electronics Lab for Switzerland, Makerere School of Computing and IT for Uganda, iHub Research for Kenya, and University of Dar es Salaam for Tanzania).  
+As already mentioned, the thesis will benefit from its close relation to a larger multi-disciplinary project on ``mobile ICT for public services under weak public institutions" under the joint-supervision of Ass. Prof.Isabel G\"{u}nther (ETH NADEL) and Prof.Gerhard Tr\"{o}ster (ETH Electronic Labs), with the active collaboration of several research institutes in Switzerland and in sub-Saharan Africa (ETH-­NADEL, ETH-­SOMS, ETH-­Electronics Lab for Switzerland, Makerere School of Computing and IT for Uganda, iHub Research for Kenya, and University of Dar es Salaam for Tanzania).  
 \\
 The candidate will work on the field with several NGOs and companies that specialize in mobile application and services for an African audience. On SMS communication, she will supported by the team of Frontline SMS, the leader in SMS campaign communication. She will also benefit from discussions and results from other teams in Tanzania and Kenya, such as Ushahidi and its iHub research lab\footnote{http://www.ihub.co.ke/pages/home.php} in Kenya and Twaweza in Tanzania\footnote{http://twaweza.org/}.
 \\\\
-The analyze of the current context will be a main responsibility of the PhD candidate, benefiting from her own personal field and the cumulative experience of Frontline SMS, Ushahidi, Twaweza and Prof. Tushabe. It should ensure a proper understanding of the ICT idiosyncrasies in the Ugandan context.
+The analyze of the current context will be a main responsibility of the PhD candidate, benefiting from her own personal field and the cumulative experience of Frontline SMS, Ushahidi, Twaweza and Prof.Tushabe. It should ensure a proper understanding of the ICT idiosyncrasies in the Ugandan context.
 \\
 Design templating for the mobile interfaces will be performed in conjunction with the ETH Electronics Labs and the water sector specialists (EAWAG and the Civil and Environmental Engineering Department at Makerere University). The design, conduct and analysis of the different field experiments will be supervized by the economic team at ETH NADEL.
 \\
-Feedbacks and reward mechanisms, relying heavily on individual and collective sociology, will be approached and valided in coordination with the social scientists at ETH SOMS.
+Feedbacks and reward mechanisms, relying heavily on individual and collective sociology, will be approached and validated in coordination with the social scientists at ETH SOMS.
 \\
 Finally, the data content analysis will benefit from the help of the NADEL team (for statistical methodologies), the Electronic Labs engineers (from the design of the machine learning filters) and the partners in Uganda (Makerere University) who will help contextualize the results.    
 \\\\
-As a future PhD candidate, Catherine Ikae Omal, who has a background in Computer Sciences, will be under the direct supervision of Prof. Tröster at the Electronic Labs while extensively working with the other departments and institutes involved. In particular, her field work will be assisted by Prof. Florence Tushabe for the Computer Science components. Prof. Isabel Günther will also provide extensive guidance in the design and coordination of the different field experiments.
+As a future PhD candidate, Catherine Ikae Omal, who has a background in Computer Sciences, will be under the direct supervision of Prof.Tr\"{o}ster at the Electronic Labs while extensively working with the other departments and institutes involved. In particular, her field work will be assisted by Prof.Florence Tushabe for the Computer Science components. Prof.Isabel G\"{u}nther will also provide extensive guidance in the design and coordination of the different field experiments.
 \\\\
 While we are confident that the project is structured to avoid the major pitfalls, important uncertainties remain around the uptake of this project in its targeted local communities. There is a risk that the project falls prey to the same disaffection affecting current mobile projects on water reporting. To mitigate this risk, a first backstop will be the completion of the first module of research. By providing an extensive and up-to-date analysis of the existing usage of ICT in Uganda, this project will provide important context to better understand the lack of participation in mobile schemes. This corresponds for us to the worst-case scenario.
 \\
 Under a less negative hypothesis, our research will manage to develop and test several new communication channels and to assess their performance. We plan to openly share our findings and open-source our models, which will ensure a certain amount of traction among researchers and operational actors. Therefore, even in the unlikely case where randomized experiments are impossible to implement, we are confident that the project will still greatly improve mobile services for water access.
+
+
 \section{Expected results}\label{expected}
 \subsection{Expected results}
 We expect to improve both the understanding of the drivers behind mobile reporting (at least for the water sector) and the nature of the mobile services (apps) and schemes to be develop to ensure high participation rates from end-users. A first block of results will be research-based, with new insights on the hurdles, usages and means of improvements for ICT in the Ugandan context. While many projects invoke mobile communications as a new tool to reduce poverty, very few scientific evidence have been gathered so far on mobile capacities and challenges to increase monitoring, governance and resource allocation. 
 \\
-A second block of result will be the creation of several tested communications schemes to improve end-user participations. To our knowedlge, this will be the first time that context, feedbacks, incentives and network influence will be properly and scientifically addressed in the design of mobile apps. There is therefore a large potential for improvement of mobile services based on the results of this project and for replication of our findings. Its potential reach is reinforced by our tight integration with the key players in this field (Frontline SMS, Ushahidi) who will assure large dissemination of our findings in Africa.
+A second block of result will be the creation of several tested communications schemes to improve end-user participations. To our knowledge, this will be the first time that context, feedbacks, incentives and network influence will be properly and scientifically addressed in the design of mobile apps. There is therefore a large potential for improvement of mobile services based on the results of this project and for replication of our findings. Its potential reach is reinforced by our tight integration with the key players in this field (Frontline SMS, Ushahidi) who will assure large dissemination of our findings in Africa.
 \subsection{Strategy for their implementation}
 This project intends to have a significant impact on both researchers and policy makers. Communication to the research community about our results will follow the traditional path of producing working papers, submitting articles to peer-­reviewed journals and attending conferences. Our implementation strategy will first come from the tight partnership with influential actors in the mobile ICT and crowdsourcing field from the beginning of the research project (Ushahidi, Twaweza, Frontline SMS). This partnership will lead to a number of open-­source mobile applications and internet platforms and full-­‐scale examples of implementations on which future projects can be based. Last, we plan to write a couple of short policy briefs to be distributed among interested agencies, and to organize at least two specific policy workshops for interested governments, NGOs and bi-­ and multilateral development agencies to discuss the benefits and challenges of mobile ICT for water monitoring and reporting. Given that the project works within the water sector and with mobile technologies, the potential for replication in other countries will be large: over a billion people are still without access to improved water, and mobile technologies have shown tremendous growth rates with three quarter of the planet’s population having access to mobile phones in varied social, cultural and economic contexts.
 
@@ -272,8 +259,8 @@ This project intends to have a significant impact on both researchers and policy
 Detailed budget for each year of the scholarship, differentiating all funding sources including those of the ETH chair and partner contributions (financial or in-kind) (point10) -> Jonathan
 
 
-\bibliographystyle{plain}
-\bibliography{proposal07022013_jg}
+\bibliographystyle{model2-names}
+\bibliography{Sawiris2013}
 
 
 \end{document}
